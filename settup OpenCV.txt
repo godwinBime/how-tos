@@ -1,0 +1,28 @@
+How to link OpenCV to visual studio project.
+----> After creating the project,
+- Right-click on the solution folder
+
+=====>STEP 01 <=====
+- Select properties
+- Select C/C++
+- Goto where OpenCV 'include' files are located and copy the path (...\opencv\build\include)
+- Select 'General'
+- Paste the path in the option label "Additional Include directories.
+- Back out of the C/C++ properties
+- Click apply.
+
+=====> STEP 02 <=====
+- Select Linker
+- Goto OpenCV where (...\opencv\build\x64\vc15\lib) is located
+- Copy and paste it in the option labelled 'Additional Library Directories'
+- Click apply
+
+=====> STEP 03 <=====
+STILL IN THE LINKER OPTION
+- Select 'Input'
+- Click 'Additional Dependencies'
+- Click 'Edit'
+- Choose the appropriate configuration from the top-left then proceed
+- Go back to the lib folder from step 02
+- Copy the name of the library you wish to configure (debug or release)
+- paste in the Edit page
