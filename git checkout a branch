@@ -1,0 +1,6 @@
+- git init
+- git add [file/folderName]
+- git commit -m [comment on what you're about to push]
+- git checkout -b [branchName]
+- git remote add origin git@github.com:godwinBime/[reponame]
+- git push -u origin [branchName]
