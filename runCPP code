@@ -1,0 +1,6 @@
+First make sure the mingw x64 in installed in your device.
+if the *.cpp file name is foo, chose the name of your executable or the 
+system will create a "a.exe" by default
+========== First command =============
+- g++ foo.cpp -o <choose the name of your executable file e.g bar>
+- now run bar for the output if the code compiles successfully.
