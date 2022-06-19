@@ -3,5 +3,5 @@
 - git commit -m "first commit"
 - git branch -M main
 - git checkout -b main
-- git remote add origin git@github.com:godwinBime/Android.git
+- git remote add main (or origin) git@github.com:godwinBime/Android.git
 - git push -u origin main
