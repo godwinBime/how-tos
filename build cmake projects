@@ -1,0 +1,6 @@
+-> goto the project directory
+-> type: cmake -S . -B build/ -G "Visual Studio 17 2022"
+NOTE: -S = source directory
+      -B = build folder
+      -G = Generator
+      "Visual Studio 17 2022": Choosen generator, use the one you have installed.
