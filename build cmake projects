@@ -4,3 +4,9 @@ NOTE: -S = source directory
       -B = build folder
       -G = Generator
       "Visual Studio 17 2022": Choosen generator, use the one you have installed.
+
+==> Next step, build your solution
+
+-> MSBuild.exe .\test.sln
+
+NOTE: give your solution the name you want.
