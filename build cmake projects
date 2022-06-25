@@ -1,12 +1,17 @@
--> goto the project directory
--> type: cmake -S . -B build/ -G "Visual Studio 17 2022"
+cmake C++ build and run application
+====================================
+
+-> cmake -S . -B build/ -G "Visual Studio 17 2022"
+====================
 NOTE: -S = source directory
       -B = build folder
       -G = Generator
       "Visual Studio 17 2022": Choosen generator, use the one you have installed.
+=====================
 
-==> Next step, build your solution
+-> cd .\build\
+-> MSBuild.exe .\<SolutionName.sln>
+-> cd Debug
+-> <SolutionName.exe>
 
--> MSBuild.exe .\test.sln
-
-NOTE: give your solution the name you want.
+NOTE: if the project requires arguments, include them immediatley after  <SolutionName.exe> <arg1> ... <argn>
