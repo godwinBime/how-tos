@@ -1,0 +1,4 @@
+=========Runn code in C from CMD================
+================================================
+- gcc c -o [output.exe] [fileName.c]
+- Type output fileName with arguments if required.
