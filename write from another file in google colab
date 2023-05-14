@@ -1,0 +1,5 @@
+!cp /content/drive/MyDrive/Colab\ Notebooks/EnronEmailsTopic/bowemail.py /content
+
+
+---> if there are spaces in the file name, insert backward slash to cnacel them out.
+---> the "/content" is where you want to store the file read from your google drive.
