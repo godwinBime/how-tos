@@ -1,0 +1,82 @@
+-> Install Cmake
+-> Download OpenCV from current sources and extract the source files to your dir of choice.
+-> Add minGW to the windows PATH variable
+-> Run Cmake
+    -> Where is the source code: D:\opencv\sources
+    -> where to build the binaries: D:\opencv-build
+
+=============>
+Then click Configure, let cmake create the build directory, and choose the following settings:
+
+ Specify the generator for this project: MinGW Makefiles
+ Specify native compilers, next
+ Compilers C: D:\Qt\Tools\mingw530_32\bin\gcc.exe
+ Compilers C++: D:\Qt\Tools\mingw530_32\bin\g++.exe
+ Finish
+========================>
+Check the box [X]WITH_QT
+ Check the box [X]WITH_OPENGL
+ set Qt5_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5
+=========================>
+Uncheck the box []ENABLE_PRECOMPILED_HEADERS
+Then click configure again.
+========================>
+Set QT_MAKE_EXECUTABLE to D:\Qt\5.9\mingw53_32\bin\qmake.exe
+ Set Qt5Concurrent_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5Concurrent
+ Set Qt5Core_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5Core
+ Set Qt5Gui_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5Gui
+ Set Qt5Test_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5Test
+ Set Qt5Widgets_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5Widgets
+ Set Qt5OpenGL_DIR to D:\Qt\5.9\mingw53_32\lib\cmake\Qt5OpenGL
+ Set CMAKE_BUILD_TYPE to Release or RelWithDebInfo
+ Set OPENCV_VS_VERSIONINFO_SKIP=1
+==============================>
+Then click configure again Then click generate
+=============================>
+Next open cmd, and type the following commands. To speed up the compile, 
+the -j flag can be used to run multiple compile jobs simultaneously. 
+ d:
+ cd d:\
+ cd opencv-build  
+ mingw32-make -j 8
+ mingw32-make install
+====================>
+Add OpenCV compiled libraries to the windows PATH variable
+Variable value: ;D:\opencv-build\install\x86\mingw\bin
+=====================>
+Compile and run the example
+=======================>
+Now a new project is made.
+
+modify the .pro file like this:
+======================>
+INCLUDEPATH += D:\opencv\build\include
+
+LIBS += D:\opencv-build\bin\libopencv_core320.dll
+LIBS += D:\opencv-build\bin\libopencv_highgui320.dll
+LIBS += D:\opencv-build\bin\libopencv_imgcodecs320.dll
+LIBS += D:\opencv-build\bin\libopencv_imgproc320.dll
+LIBS += D:\opencv-build\bin\libopencv_features2d320.dll
+LIBS += D:\opencv-build\bin\libopencv_calib3d320.dll
+
+# more correct variant, how set includepath and libs for mingw
+# add system variable: OPENCV_SDK_DIR=D:/opencv/opencv-build/install
+# read http://doc.qt.io/qt-5/qmake-variable-reference.html#libs
+
+#INCLUDEPATH += $$(OPENCV_SDK_DIR)/include
+
+#LIBS += -L$$(OPENCV_SDK_DIR)/x86/mingw/lib \
+#        -lopencv_core320        \
+#        -lopencv_highgui320     \
+#        -lopencv_imgcodecs320   \
+#        -lopencv_imgproc320     \
+#        -lopencv_features2d320  \
+#        -lopencv_calib3d320
+
+
+
+
+
+
+Reference:
+-> https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows
