@@ -11,5 +11,5 @@ and the repository exists.
 - git branch -M main
 - git checkout -b main
 - git remote add main (or origin) git@github.com:godwinBime/Android.git
-- https://github.com/godwinBime/<repo_name>.git
+- git remote set-url origin https://github.com/godwinBime/demos.git
 - git push -u origin main
