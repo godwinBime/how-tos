@@ -1,0 +1,4 @@
+Clone a single branch:   
+=======================           
+
+- git clone <url> --branch <branch-name> --single-branch
