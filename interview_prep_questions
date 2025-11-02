@@ -1,4 +1,10 @@
 Hiring Manager:“Once your app is live in the Google Play Store, how do you monitor its performance and ensure a good user experience?"     
 
-Answer: In my current role, once an app is published to the Google Play Store, I rely on the Play Console for client‑side insights like crash reports, ANR rates, device distribution, and user engagement. But since our backend runs entirely on AWS, I also extend monitoring with services like Amazon CloudWatch and AWS X‑Ray. That gives me visibility into server‑side performance — API latencies, error rates, and request traces across AppSync, Lambda, and DynamoDB. By combining the two, I get a complete picture: Play Console shows me how the app behaves on real devices, while AWS observability tools show me how the backend is performing under load. For example, if I see a spike in ANRs in Play Console, I can correlate it with CloudWatch metrics to determine if it’s tied to backend latency or throttling. This dual approach helps me quickly identify root causes and ensure both the frontend experience and backend services are optimized after deployment.
+Answer: In my current role, once an app is published to the Google Play Store, I rely on the Play Console for client‑side insights like crash reports, ANR rates, device
+distribution, and user engagement. But since our backend runs entirely on AWS, I also extend monitoring with services like Amazon CloudWatch and AWS X‑Ray. That gives me
+visibility into server‑side performance — API latencies, error rates, and request traces across AppSync, Lambda, and DynamoDB. By combining the two, I get a complete
+picture: Play Console shows me how the app behaves on real devices, while AWS observability tools show me how the backend is performing under load. For example, if I see
+a spike in ANRs in Play Console, I can correlate it with CloudWatch metrics to determine if it’s tied to backend latency or throttling. This dual approach helps me 
+quickly identify root causes and ensure both the frontend experience and backend services are optimized after deployment.
+
 
