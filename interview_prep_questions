@@ -89,8 +89,16 @@ over time. At Lowe’s, I’d apply the same approach to ensure Android systems 
 
 ##################################################
 
-==> 
+==> Hiring Manager: how do you optimize loading in a backend api.
+
+==> To reduce the app loading time by 40%, we identified a complex user data fetch. We refactored the Android query to use GraphQL with AppSync, 
+allowing us to precisely request only the five required fields. On the backend, we implemented AppSync Response Caching for the static fields and ensured
+the DynamoDB tables had optimized Global Secondary Indexes aligned with the new GraphQL query pattern. We then used Provisioned Concurrency on the backing 
+Lambda to eliminate cold starts for this critical path. This combination cut the end-to-end latency significantly.
+
 ##################################################
+
+==> 
 ##################################################
 ##################################################
 ##################################################
