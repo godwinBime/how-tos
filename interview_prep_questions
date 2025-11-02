@@ -1,10 +1,49 @@
-Hiring Manager:“Once your app is live in the Google Play Store, how do you monitor its performance and ensure a good user experience?"     
+==> Hiring Manager: “Once your app is live in the Google Play Store, how do you monitor its performance and ensure a good user experience?"     
 
-Answer: In my current role, once an app is published to the Google Play Store, I rely on the Play Console for client‑side insights like crash reports, ANR rates, device
+==> Answer: In my current role, once an app is published to the Google Play Store, I rely on the Play Console for client‑side insights like crash reports, ANR rates, device
 distribution, and user engagement. But since our backend runs entirely on AWS, I also extend monitoring with services like Amazon CloudWatch and AWS X‑Ray. That gives me
 visibility into server‑side performance — API latencies, error rates, and request traces across AppSync, Lambda, and DynamoDB. By combining the two, I get a complete
 picture: Play Console shows me how the app behaves on real devices, while AWS observability tools show me how the backend is performing under load. For example, if I see
 a spike in ANRs in Play Console, I can correlate it with CloudWatch metrics to determine if it’s tied to backend latency or throttling. This dual approach helps me 
 quickly identify root causes and ensure both the frontend experience and backend services are optimized after deployment.
+
+##################################################
+
+==> Hiring Manager: “Can you share your experience working with AI or other emerging technologies, and how you’ve applied them to deliver real business value?”
+
+==> Yes, I’ve had the opportunity to work with AI in both personal projects and at scale within Amazon. For example, I recently published an AI‑powered Android 
+chatbot app called Mini Gem on the Play Store, which uses Google’s Gemini API for multimodal analysis — combining natural language processing and image recognition
+to provide context‑aware responses.
+
+In addition to that, I contributed to integrating the Amazon Q API into the AtoZ Employee App. We built an internal chat assistant that allowed employees to ask both 
+in‑house HR and policy questions as well as general queries. My role involved designing the Android integration layer, ensuring secure API communication, and optimizing 
+the conversational flow for usability. This assistant reduced the load on HR support channels and gave employees faster, self‑service access to information.
+
+These experiences taught me how to balance cutting‑edge AI capabilities with enterprise‑grade reliability, security, and user experience. At Lowe’s, 
+I’d be excited to apply the same approach — leveraging AI not just as a novelty, but as a way to solve real problems for associates and customers.
+
+##################################################
+
+==> Hiring Manager: "what are some GraphQL clients that aws offers because my work experience shows I work only with aws as my cloud provider when working at amazon"
+
+==> In my work at Amazon, I used AWS AppSync as the managed GraphQL service and integrated it with the Amplify GraphQL client on Android. This allowed me to handle 
+queries, mutations, and subscriptions with built‑in support for Cognito authentication and offline caching. I also leveraged Amplify DataStore for offline‑first 
+workflows, which automatically synced with AppSync when connectivity was restored. This gave me end‑to‑end experience with AWS’s GraphQL ecosystem.
+
+##################################################
+
+
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+##################################################
+
 
 
