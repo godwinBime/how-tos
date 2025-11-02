@@ -32,10 +32,36 @@ workflows, which automatically synced with AppSync when connectivity was restore
 
 ##################################################
 
+==> Hiring Manager: Can you walk me through a complex Android feature you’ve built and how you ensured it was scalable?
+
+==> One of the most complex features I built was the time card management system at Amazon. It required offline resilience, complex validation, 
+and seamless parity with the web platform. I implemented it using Kotlin, Jetpack Compose, and MVVM, with modularized architecture and dependency 
+injection to keep the codebase clean and testable. I also added observability with structured logs and performance metrics, which allowed us to monitor 
+usage in production. The result was a feature that scaled to millions of employees with a 94.9% crash-free rate, while remaining easy to maintain and extend. 
+That experience taught me the importance of clean boundaries and instrumentation, which I’d bring to Lowe’s to ensure long-term scalability.
 
 ##################################################
+
+==> Hiring Manager: How do you approach improving app performance?
+
+==> My approach always starts with measurement. At Amazon, I profiled the app and discovered that inefficient GraphQL queries and redundant recompositions were 
+slowing things down. I redesigned the queries, implemented normalized caching, and introduced lazy loading for non-critical data. On the UI side, I optimized 
+Compose rendering by eliminating heavy work in composition and memoizing state. I also collaborated with backend teams to simplify endpoints and added automated 
+checks in CI for cold start and frame drops. These changes reduced load time by 40% and cut API response times by 50%, which directly improved employee productivity.
+I see performance as a product feature, and I’d apply the same rigor at Lowe’s to ensure smooth, reliable mobile experiences.
+
 ##################################################
+
+==> Hiring Manager: How do you mentor junior engineers?
+
+==> Mentorship for me is about both technical guidance and building confidence. At Amazon, I noticed new hires struggled with onboarding, so I created 
+structured guides, ran weekly code walkthroughs, and set up a buddy system. I also encouraged juniors to lead root cause analysis sessions and present 
+their work in demos, which helped them grow both technically and in communication skills. These efforts reduced onboarding time by about 30% and improved 
+team velocity. I believe mentorship scales teams, and at Lowe’s I’d continue fostering a culture of knowledge-sharing and growth.
+
 ##################################################
+
+==> 
 ##################################################
 ##################################################
 ##################################################
