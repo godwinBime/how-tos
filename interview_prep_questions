@@ -104,5 +104,9 @@ Lambda to eliminate cold starts for this critical path. This combination cut the
 ##################################################
 ##################################################
 
+MORE TO RESEARCH:    
+-> threadingg and coroutine when running test.
+
+
 
 
