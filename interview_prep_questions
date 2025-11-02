@@ -61,10 +61,35 @@ team velocity. I believe mentorship scales teams, and at Lowe’s I’d continue
 
 ##################################################
 
+==> Hiring Manager: Tell me about a time you worked with other teams to deliver a unified solution.
+
+==> At Amazon, I partnered with the web team to align on APIs and design patterns so we could achieve 90% feature parity across platforms. We held regular syncs, 
+shared design documents, and created a joint backlog for cross-platform features. I also worked closely with backend teams to version APIs and avoid breaking changes.
+This collaboration ensured employees had a consistent experience whether they used the web or mobile app, and it reduced duplicate support content. At Lowe’s, 
+I’d bring the same collaborative approach to ensure seamless experiences across mobile, web, and backend systems.
+
+##################################################
+
+==> Hiring Manager: What’s your experience with CI/CD and automation?
+
+==> I’ve led several initiatives to improve delivery speed and reliability. At Amazon, I optimized Gradle builds, introduced build caching, 
+and split pipelines into parallel stages for linting, unit tests, and instrumentation. I automated device-farm runs for critical flows and set up canary rollouts 
+with telemetry dashboards to monitor crash rates and performance. These changes reduced deployment time from 45 to 15 minutes and cut QA cycle time from five days 
+to three, while also reducing post-release bugs by 40%. At Lowe’s, I’d focus on similar automation and observability practices to accelerate delivery while 
+maintaining high reliability.
+
+##################################################
+
+==> Hiring Manager: How do you approach designing Android systems for long-term sustainability?
+
+==> I focus on clean architecture principles like MVVM, modularization, and clear separation of concerns. At Amazon, I migrated legacy features to Jetpack Compose,
+which reduced the codebase size by 30% and cut maintenance time by 45%. I standardized state handling, dependency injection, and testing strategies, and I built 
+observability into the system with logging and metrics that tied frontend events to backend requests. These practices made the system easier to scale and maintain 
+over time. At Lowe’s, I’d apply the same approach to ensure Android systems remain reliable and adaptable as the business grows.
+
+##################################################
+
 ==> 
-##################################################
-##################################################
-##################################################
 ##################################################
 ##################################################
 ##################################################
