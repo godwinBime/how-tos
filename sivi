@@ -18,7 +18,7 @@ days to three days, ensuring consistent app performance and stability.
 platform, achieving 65% faster ticket resolution and 40% reduction in employee support escalations across 1M+ employees.
 
 
-PUBLICATIONS AND PROJECTS
+========================
 Android Application: Mini Gem - AI Productivity Chatbot | Google Play Store. January 2024 - Present
 • Built a multimodal AI-powered Android chatbot using Kotlin Jetpack Compose and Google’s Gemini LLM API to perform real-time
 data analysis from both text and images. Enabled intelligent context-aware responses by combining NLP and image recognition to
