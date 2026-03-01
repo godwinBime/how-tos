@@ -1,5 +1,11 @@
 
 =================== Generate GraphQl Schema===================================
+
+===> step one
+- run the command below in your Android Studio cmd
 ./gradlew :app:downloadApolloSchema --endpoint='https://countries.trevorblades.com/graphql' --schema app/src/main/graphql/com/kroger/schema.graphqls
+
+====> next steps
+- run the project befor eor after writing the necessary queries so as to build the auto generated graphql class files.
 
 ==============================================================================================
