@@ -1,0 +1,8 @@
+==> 
+
+
+
+keytool -export -rfc -keystore "<local path to where your .jks file is stored>" -alias "Alias name when creating your keystore creds" -file upload_certificate.pem
+
+
+
