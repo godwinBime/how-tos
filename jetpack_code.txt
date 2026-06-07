@@ -1,0 +1,13 @@
+viewModel: ChatViewModel = viewModel(
+factory = ChatViewModel.provideFactory(
+run {
+val context = LocalContext.current.applicationContext
+val liteRtService = LiteRtService(context)
+ChatRepositoryImpL(
+context = context,
+fileParser = FileParserEngine(context),
+LiteRtService = liteRtService,
+aiCoreDataSource = AiCoreDataSource(AiCoreService(context), context),
+LiteRtDataSource = LiteRtDataSource(liteRtService),
+cloudGeminiService = CloudGeminiService(context)
+)}))
