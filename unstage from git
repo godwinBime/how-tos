@@ -1,0 +1,1 @@
+git restore . – Discards unstaged changes in all tracked files across the current directory.
